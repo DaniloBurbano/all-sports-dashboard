@@ -1,7 +1,8 @@
 // import image from '../assets/images/logo-DH.png';
 import image from '../assets/images/all_sports_logo_black.png';
 import { Route, Link, Routes } from "react-router-dom";
-import GenresInDb from './GenresInDb';
+import CategoriesInDbFunction from './CategoriesInDbFunction';
+import Movie from './Movie';
 import ContentWrapper from './ContentWrapper';
 import NotFound from './NotFound';
 
@@ -16,7 +17,7 @@ function SideBar(){
                 {/*<!-- Sidebar - Brand -->*/}
                 <Link to="/" className='sidebar-brand d-flex align-items-center justify-content-center' >
                     <div className="sidebar-brand-icon">
-                        <img className="p-4 w-100" src={image} alt="Digital House"/>
+                        <img className="p-4 w-100" src={image} alt="ALL SPORTS"/>
                     </div>
                 </Link>
 
@@ -42,23 +43,23 @@ function SideBar(){
                 <li className="nav-item">
                     <Link to="/" className='nav-link collapsed'>
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <span>Home</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" href="/">
+                    <Link className="nav-link" to="/categories">
                             <i className="fas fa-fw fa-chart-area"></i>
-                            <span>Charts</span>
+                            <span>Categories</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/generos">
+                    <Link className="nav-link" to="/products">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span>
+                        <span>Products</span>
                     </Link>
 
                 </li>
@@ -72,8 +73,9 @@ function SideBar(){
 
             <Routes>
                 <Route path='/'  element={<ContentWrapper />} />
-                <Route path='/generos'  element={<GenresInDb />} />
+                <Route path='/categories'  element={<CategoriesInDbFunction />} />
                 <Route path='/dash'  element={<ContentWrapper />} />
+                <Route path='/products'  element={<Movie />} />
 
                 <Route path='*'  element={< NotFound />} />
             </Routes>
