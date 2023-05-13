@@ -2,6 +2,9 @@ import GenresInDb from './GenresInDb';
 import CategoriesInDb from './CategoriesInDb';
 import ContentRowMovies from './ContentRowMovies';
 import LastMovieInDb from './LastMovieInDb';
+import "/public/css/ProductList.css";
+
+
 
 function ContentRowTop(){
     return(
@@ -9,7 +12,10 @@ function ContentRowTop(){
 			{/*<!-- Content Row Top -->*/}
 			<div className="container-fluid">
 				<div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-					<h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+					{/* <h1 className="h3 mb-0 text-gray-800">App Dashboard
+					 */}
+					<h1 class="listTitle">App Dashboard
+					</h1>
 				</div>
 			
 				{/*<!-- Content Row Movies-->*/}

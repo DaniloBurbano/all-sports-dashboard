@@ -2,21 +2,22 @@ import SmallCard from './SmallCard';
 
 let productInDataBase = {
     color:   "primary",
-    titulo: "Movies in Data Base",
+    titulo: "Total de Productos",
     valor: 21,
     icono: "fas fa-film",
+
 }
 
 let amount ={
-    color:   "success",
-    titulo: "Total awards",
+    color:   "primary",
+    titulo: "Total de Categorías de Productos",
     valor: 79,
     icono: "fas fa-award",
 }
 
 let user = {
-    color:   "warning",
-    titulo: "Actors quantity",
+    color:   "primary",
+    titulo: "Total de Usuarios",
     valor: 49,
     icono: "fas fa-user",
 }
@@ -29,8 +30,8 @@ function ContentRowTop(){
             {/*<!-- Content Row -->*/}
             <div className="row">
                 {
-                    cardProps.map((producto,index)=>{
-                        return <SmallCard  {...producto}  key= {index}/>
+                    cardProps.map((product,index)=>{
+                        return <SmallCard  {...product}  key= {index}/>
                     })
                 }      
             </div>
