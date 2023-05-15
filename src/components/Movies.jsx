@@ -58,7 +58,7 @@ class Movie extends Component {
 				{this.state.movies.map((movie, index) => {
                   return <MovieList {...movie} key={index} />;
                 })}
-                  {/* <tr>
+                  <tr>
                     <td>01</td>
                     <td>Reto al destino</td>
                     <td>20</td>
@@ -70,8 +70,8 @@ class Movie extends Component {
                     <td>La caida del halcon negro</td>
                     <td>10</td>
                     <td>18</td>
-                    <td>240</td>
-                  </tr> */}
+                    <td>240</td> 
+                  </tr> 
                 </tbody>
               </table>
             </div>
