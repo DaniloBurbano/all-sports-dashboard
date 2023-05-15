@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Category from "./Category";
-
+import "/public/css/ProductList.css";
 
 class CategoriesInDb extends Component{
   constructor() {
@@ -29,9 +29,9 @@ class CategoriesInDb extends Component{
         <div className="col-lg-6 mb-4">
           <div className="card shadow mb-4">
             <div className="card-header py-3">
-              <h6 onMouseOver={this.onMouseOver} className="m-0 font-weight-bold text-gray-800" id="genero">
+              <h5 onMouseOver={this.onMouseOver} className="LisyTitle" id="genero">
                 Categorías en Base de Datos
-              </h6>
+              </h5>
             </div>
             <div className="card-body">
               <div className="row">

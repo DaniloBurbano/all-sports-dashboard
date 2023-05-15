@@ -44,7 +44,6 @@ class Product extends Component {
                   <tr class = "trListProduct">
                     <th>Id</th>
                     <th>Producto</th>
-                    <th>Imagen</th>
                     <th>Marca</th>
                     <th>Color</th>
                     <th>Categoría</th>
