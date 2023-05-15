@@ -1,7 +1,7 @@
 import GenresInDb from './GenresInDb';
 import CategoriesInDb from './CategoriesInDb';
 import ContentRowMovies from './ContentRowMovies';
-import LastMovieInDb from './LastMovieInDb';
+import LastProductInDb from './LastProductInDb';
 import "/public/css/ProductList.css";
 
 
@@ -26,7 +26,7 @@ function ContentRowTop(){
 				{/*<!-- Content Row Last Movie in Data Base -->*/}
 				<div className="row">
 					{/*<!-- Last Movie in DB -->*/}
-					<LastMovieInDb />
+					<LastProductInDb />
 					{/*<!-- End content row last movie in Data Base -->*/}
 
 					{/*<!-- Genres in DB -->*/}
