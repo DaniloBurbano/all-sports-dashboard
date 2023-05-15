@@ -26,15 +26,16 @@ class LastProductInDb extends Component {
         return (
         <div className="col-lg-6 mb-4">
                 <div className="card shadow mb-4">
-                    <div className="card-header py-3">
-                        <h5 className="m-0 font-weight-bold text-gray-800">Último Producto Creado</h5>
-                    </div>
-                    <div className="card-body">
-                        
-                        <p> {this.state.products.map((products, index) => {
-                            return <LastProduct {...products} key={index} />
-                        })}
-                        </p>
+
+                        <div className="card-header py-3">
+                            <h5 className="listTitle">Último Producto Creado</h5>
+                        </div>
+                        <div className="card-body">
+
+                            <p> {this.state.products.slice(0, 1).map((products, index) => {
+                                return <LastProduct {...products} key={index} />
+                                })}
+                            </p>
                         </div>
                 </div>
         </div>
