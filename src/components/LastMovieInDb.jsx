@@ -1,6 +1,6 @@
 // import imagenFondo from '../assets/images/mandalorian.jpg';
 import imagenFondo from '../../public/vite.svg';
-import "/public/css/ProductList.css";
+
 
 
 function LastMovieInDb() {
@@ -9,7 +9,7 @@ function LastMovieInDb() {
                 <div className="card shadow mb-4">
                     <div className="card-header py-3">
                         {/* <h5 className="m-0 font-weight-bold text-gray-800">Último Producto Creado</h5> */}
-                        <h5 className=" ListTitle">Último Producto Creado</h5>
+                        <h5 className="ListTitle">Último Producto Creado</h5>
                     
                     </div>
                     <div className="card-body">

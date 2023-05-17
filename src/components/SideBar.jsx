@@ -2,7 +2,7 @@
 import image from '../assets/images/all_sports_logo_black.png';
 import { Route, Link, Routes } from "react-router-dom";
 import CategoriesInDbFunction from './CategoriesInDbFunction';
-import Movie from './Movie';
+import Movie from './Movies';
 import ContentWrapper from './ContentWrapper';
 import NotFound from './NotFound';
 

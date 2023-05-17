@@ -16,10 +16,27 @@
 }
 
 .listImage{
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     justify-content: center;
     border-radius: 5%;
-    border: solid 2px #052b63;
+    border: solid 1px #0744a0;
+    box-shadow: 10px 5px 5px teal;
   
+}
+
+.lastProductImage{
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    border-radius: 5%;
+    border: solid 1px #0744a0;
+    box-shadow: 10px 5px 5px teal;
+  
+}
+
+.card-body-totals{
+    box-shadow: 5px 10px 5px black;
+    height: 30px;
+    text-align: center;
 }

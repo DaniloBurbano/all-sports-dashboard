@@ -4,15 +4,14 @@ let productInDataBase = {
     color:   "primary",
     titulo: "Total de Productos",
     valor: 21,
-    icono: "fas fa-film",
-
+    icono: "fas fa-fw fa-table"
 }
 
 let amount ={
     color:   "primary",
     titulo: "Total de Categorías de Productos",
     valor: 79,
-    icono: "fas fa-award",
+    icono: "fas fa-fw fa-chart-area",
 }
 
 let user = {

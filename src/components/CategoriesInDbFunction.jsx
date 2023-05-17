@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Category from "./Category";
+import "/public/css/ProductList.css";
+
+
 
 function CategoriesInDbFunction() {
 
@@ -27,7 +30,7 @@ function CategoriesInDbFunction() {
       <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
           <div className="card-header py-3">
-            <h6 onMouseOver={onMouseOver} className="m-0 font-weight-bold text-gray-800" id="genero">
+            <h6 onMouseOver={onMouseOver} className="listTitle" id="genero">
               Categorías en Base de Datos
             </h6>
           </div>

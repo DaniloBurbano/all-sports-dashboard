@@ -1,4 +1,5 @@
-import foto from '../../public/vite.svg';
+import foto from '../../src/assets/images/avatar-1677932201015.jpg';
+
 
 function TopBar(){
     return(
@@ -36,6 +37,8 @@ function TopBar(){
 					<li className="nav-item dropdown no-arrow">
 						<a className="nav-link dropdown-toggle" href="/" id="userDropdown">
 							<span className="mr-2 d-none d-lg-inline text-gray-600 small">John Doe</span>
+						
+						
 							<img className="img-profile rounded-circle" src={foto} alt="Admin" width="60"/>
 						</a>
 					</li>
