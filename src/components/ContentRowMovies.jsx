@@ -1,5 +1,7 @@
 import SmallCard from './SmallCard';
 
+
+
 let productInDataBase = {
     color:   "primary",
     titulo: "Total de Productos",
