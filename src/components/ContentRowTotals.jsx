@@ -36,7 +36,11 @@ class Totals extends Component {
            .then((response) => response.json())
            .then((products) => {
              this.setState({ products: products.data });
-             const productCount = products.data.length;
+            //  const productCount = products.data.length;
+             
+            const productCount = products.meta.count
+             
+             
              productInDataBase.valor = productCount;
            })
            .catch((error) => console.log(error));
@@ -45,7 +49,10 @@ class Totals extends Component {
           .then((response) => response.json())
           .then((users) => {
             this.setState({ users: users.data });
-            const userCount = users.data.length;
+            // const userCount = users.data.length;
+            
+            const userCount = users.meta.count;
+            
             user.valor = userCount;
           })
           .catch((error) => console.log(error));
@@ -54,7 +61,11 @@ class Totals extends Component {
             .then((response) => response.json())
             .then((categories) => {
                 this.setState({ categories: categories.data });
-                const categoryCount = categories.data.length;
+                // const categoryCount = categories.data.length;
+                
+                const categoryCount = categories.meta.count;
+                
+                
                 amount.valor = categoryCount;
             })
             .catch((error) => console.log(error));

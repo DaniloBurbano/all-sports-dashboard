@@ -30,7 +30,7 @@ class CategoriesInDb extends Component{
           <div className="card shadow mb-4">
             <div className="card-header py-3">
               <h5 onMouseOver={this.onMouseOver} className="listTitle" id="genero">
-                Categorías en Base de Datos
+                Categorías de Productos en Base de Datos
               </h5>
             </div>
             <div className="card-body">

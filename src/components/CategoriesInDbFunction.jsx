@@ -31,7 +31,7 @@ function CategoriesInDbFunction() {
         <div className="card shadow mb-4">
           <div className="card-header py-3">
             <h6 onMouseOver={onMouseOver} className="listTitle" id="genero">
-              Categorías en Base de Datos
+            Categorías de Productos en Base de Datos
             </h6>
           </div>
           <div className="card-body">
