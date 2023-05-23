@@ -5,6 +5,7 @@ import CategoriesInDbFunction from './CategoriesInDbFunction';
 import Movie from './Movies';
 import ContentWrapper from './ContentWrapper';
 import NotFound from './NotFound';
+import Product from './Product';
 
 
 
@@ -51,7 +52,7 @@ function SideBar(){
                 <li className="nav-item">
                     <Link className="nav-link" to="/categories">
                             <i className="fas fa-fw fa-chart-area"></i>
-                            <span>Categories</span>
+                            <span>Categorias</span>
                     </Link>
                 </li>
 
@@ -59,7 +60,7 @@ function SideBar(){
                 <li className="nav-item">
                     <Link className="nav-link" to="/products">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Products</span>
+                        <span>Productos</span>
                     </Link>
 
                 </li>
@@ -75,7 +76,7 @@ function SideBar(){
                 <Route path='/'  element={<ContentWrapper />} />
                 <Route path='/categories'  element={<CategoriesInDbFunction />} />
                 <Route path='/dash'  element={<ContentWrapper />} />
-                <Route path='/products'  element={<Movie />} />
+                <Route path='/products'  element={<Product />} />
 
                 <Route path='*'  element={< NotFound />} />
             </Routes>
