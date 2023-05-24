@@ -36,9 +36,9 @@ class Totals extends Component {
            .then((response) => response.json())
            .then((products) => {
              this.setState({ products: products.data });
-            //  const productCount = products.data.length;
+            const productCount = products.data.length;
              
-            const productCount = products.meta.count
+            // const productCount = products.meta.count
              
              
              productInDataBase.valor = productCount;
@@ -51,8 +51,10 @@ class Totals extends Component {
             this.setState({ users: users.data });
             // const userCount = users.data.length;
             
-            const userCount = users.meta.count;
+            const userCount = users.data.length;
+            // const userCount = users.meta.count;
             
+
             user.valor = userCount;
           })
           .catch((error) => console.log(error));
@@ -61,9 +63,9 @@ class Totals extends Component {
             .then((response) => response.json())
             .then((categories) => {
                 this.setState({ categories: categories.data });
-                // const categoryCount = categories.data.length;
+                const categoryCount = categories.data.length;
                 
-                const categoryCount = categories.meta.count;
+                // const categoryCount = categories.meta.count;
                 
                 
                 amount.valor = categoryCount;
@@ -79,10 +81,12 @@ class Totals extends Component {
                             return <SmallCardTotals  {...product}  key= {index}/>
                         })
                     }      
-                </div>
-            </>
-        )
+             
+            </div>
+        </>
+            )
         }
+}
 
     //    componentDidMount() {
     //     fetch("http://localhost:3005/api/users")
@@ -103,9 +107,7 @@ class Totals extends Component {
     //       })
     //       .catch((error) => console.log(error));
     //   }
-    }
-
-
+ 
 
  
  export default Totals;

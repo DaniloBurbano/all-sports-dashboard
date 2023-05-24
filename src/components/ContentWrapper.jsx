@@ -1,6 +1,7 @@
 import TopBar from './TopBar';
 import ContentRowTop from './ContentRowTop';
 import Product from './Product';
+import User from './User';
 import Footer from './Footer';
 
 function ContentWrapper(){
@@ -13,6 +14,7 @@ function ContentWrapper(){
                     <TopBar />
                     <ContentRowTop />
                     <Product />
+                    <User />
                     <Footer />
                 </div>
             </div>    

@@ -6,6 +6,7 @@ import Movie from './Movies';
 import ContentWrapper from './ContentWrapper';
 import NotFound from './NotFound';
 import Product from './Product';
+import User from './User';
 
 
 
@@ -38,7 +39,7 @@ function SideBar(){
                 <hr className="sidebar-divider"/>
 
                 {/*<!-- Heading -->*/}
-                <div className="sidebar-heading">Actions</div>
+                <div className="sidebar-heading">Acciones</div>
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
@@ -65,6 +66,15 @@ function SideBar(){
 
                 </li>
 
+                <li className="nav-item">
+                    <Link className="nav-link" to="/users">
+                        <i className="fas fa-user"></i>
+                        <span>Usuarios</span>
+                    </Link>
+
+                </li>
+
+
 
 
                 {/*<!-- Divider -->*/}
@@ -77,6 +87,8 @@ function SideBar(){
                 <Route path='/categories'  element={<CategoriesInDbFunction />} />
                 <Route path='/dash'  element={<ContentWrapper />} />
                 <Route path='/products'  element={<Product />} />
+                <Route path='/users'  element={<User />} />
+
 
                 <Route path='*'  element={< NotFound />} />
             </Routes>

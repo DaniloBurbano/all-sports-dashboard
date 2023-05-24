@@ -1,5 +1,5 @@
 import GenresInDb from './GenresInDb';
-import CategoriesInDb from './CategoriesInDb';
+// import CategoriesInDb from './CategoriesInDb';
 import CategoriesInDbFunction from './CategoriesInDbFunction';
 import ContentRowTotals from './ContentRowTotals';
 import LastProductInDb from './LastProductInDb';
@@ -20,7 +20,7 @@ function ContentRowTop(){
 				</div>
 			
 				{/*<!-- Content Row Movies-->*/}
-				<ContentRowTotals />
+						<ContentRowTotals />
 				{/*<!-- End movies in Data Base -->*/}
 				
 
@@ -37,7 +37,7 @@ function ContentRowTop(){
 					{/*<!--End Genres In Db-->*/}		
 				
 				
-				</div>
+				</div>S
 			</div>
 			{/*<!--End Content Row Top-->*/}
         </>
